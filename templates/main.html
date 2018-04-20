@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <h1>{{main_header}}</h1>
+    
+    {% if blogs|length == 0 %}
+        <p>Sorry, no posts yet.  Click the link above if you'd like to add a post!</p>
+    {% endif %}
+
+    {% for blog in blogs %}
+        
+        <h4> 
+            <a href="/blog?id={{ blog.id }}">{{ blog.title }}</a>
+        </h4>
+
+        <p>{{ blog.body }}</p>
+        <p>
+            Written by <a href='/blog?user={{blog.author.id}}&username={{blog.author.username}}'>{{blog.author.username}}</a>
+        </p>
+        <hr>
+        
+    {% endfor %}
+{% endblock %}
+

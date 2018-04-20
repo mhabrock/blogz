@@ -1,0 +1,29 @@
+body{
+    background-color: #ff00ff;
+
+}
+
+form {
+    background-color: #ff66ff;
+    padding: 20px;
+    margin: 0 auto;
+    width: 540px auto;
+    font: 16px sans-serif;
+    border-radius: 10px;
+}
+textarea {
+   
+    margin: 10px 0;
+    width: 540px;
+    height: 120px;
+}
+h1{
+    color: #6e0c70;
+
+}
+li p{
+    text-indent: 50px;
+}
+.error {
+    color: red;
+}
